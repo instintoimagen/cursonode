@@ -18,7 +18,7 @@ function webServer(req, res) {
   res.writeHead(200, { "Content-Type": "text/html" }).end(`
       <h1>Hola esto es NODEjs</h1>
       <h2>estudiando</h2>
-      <img src="https://sergioortega.com.ar/assets/perfil.jpg" alt="sergio" />`);
+      <img style="max-height: 50vh" src="https://sergioortega.com.ar/assets/perfil.jpg" alt="sergio" />`);
 }
 
 http.createServer(webServer).listen(3000, "127.0.0.1");
